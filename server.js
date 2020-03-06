@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require("express");
-ejs = require('ejs'),
-  mongoose = require('mongoose'),
+mongoose = require('mongoose'),
   app = express(),
   passport = require('passport'),
   LocalStrategy = require('passport-local'),
