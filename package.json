@@ -1,0 +1,23 @@
+{
+  "name": "Woofer-Park",
+  "version": "1.0.0",
+  "description": "Dog Park Locator",
+  "main": "seeds.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoraleeSmith/Woofer-Park.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LoraleeSmith/Woofer-Park/issues"
+  },
+  "homepage": "https://github.com/LoraleeSmith/Woofer-Park#readme"
+}
