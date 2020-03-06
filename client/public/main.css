@@ -1,0 +1,273 @@
+/**********************************************
+ GENERAL STYLES
+**********************************************/
+body {
+    color: burlywood;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+/**********************************************
+ NAVIGATION
+**********************************************/
+nav, 
+    footer {
+    background-color: rgb(1, 107, 54);
+    color: #ffffff;
+    z-index: 1;
+}
+nav a, 
+    footer a {
+        color: burlywood;
+}
+nav a:hover, 
+    footer a:hover {
+        color: burlywood;
+        font-weight: 800;
+        text-decoration: none;
+}
+.navbar-brand {
+    color:rgb(1, 107, 54) ;
+    font-size: 2rem;
+}
+.mute-link:hover {
+    color: burlywood;
+}
+.logo-font {
+    font-family: 'Lacquer', ;
+}
+.lg-brand {
+    font-size: 8rem;
+}
+.md-brand {
+    font-size: 4rem;
+}
+
+/**********************************************
+ BUTTONS
+**********************************************/
+.btn-rounded {
+    border: none;
+    border-radius: 40rem;
+    color: #ffffff;
+}
+.btn-lg {
+    width: 18rem;
+}
+.btn-sm {
+    padding: 0.5rem;
+    width: 7rem;
+}
+.add-btn {
+    background-color: #90C978;
+}
+.back-btn {
+    color: #555f61;
+    font-size: 2rem;
+}
+.back-btn:hover,
+    .continue-btn:hover {
+        color: #83C6DD;
+}
+.info-btn {
+    background-color: #F8D6DA;
+    color: #555f61;
+}
+.login-btn,
+    .edit-btn {
+        background-color: lightgreen;
+        color: #555f61;
+}
+.login-btn:hover,
+    .edit-btn:hover,
+    .delete-btn:hover {
+        color: #555f61;
+        font-weight: 700;
+}
+.delete-form {
+    display: inline;
+}
+.delete-btn {
+    background-color: #FF625E;
+}
+.continue-btn {
+    color: #343535;
+    font-size: 2rem;
+}
+
+/**********************************************
+ ALERTS
+**********************************************/
+.alert-success {
+    background-color: #FF625E;
+    border-color:#FF625E;
+}
+
+/**********************************************
+ LANDING PAGE
+**********************************************/
+#landing-header {
+    text-align: center;
+    padding-top: 20vh;
+    position: relative;
+    z-index: 1;
+}
+#landing-header h1 {
+    color: burlywood;
+    font-family: 'Lacquer', ;
+    font-size: 5rem;
+}
+.slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+.slideshow li:nth-child(1) { 
+    background-image: linear-gradient(#ffffff80, #ffffff80), url(https://images.unsplash.com/photo-1582227720886-7aefc9b82983?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80)
+}
+.slideshow li:nth-child(2) { 
+    background-image: linear-gradient(#ffffff80, #ffffff80), url(https://images.unsplash.com/photo-1563485122553-c269d1f375b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=626&q=80);
+    animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+    background-image: linear-gradient(#ffffff80, #ffffff80), url(https://images.unsplash.com/photo-1530568240893-07c8e00346b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+    background-image: linear-gradient(#ffffff80, #ffffff80), url(https://images.unsplash.com/photo-1560270688-9b40cd990ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80);
+    animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+    background-image: linear-gradient(#ffffff80, #ffffff80), url(https://images.unsplash.com/photo-1514373941175-0a141072bbc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);
+    animation-delay: 40s; 
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/*** ANIMATION ***/
+@keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+}
+/*** Older browser support - .no-cssanimations class added by modernizr ***/
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+/**********************************************
+ ALL PARK PAGE
+**********************************************/
+header {
+    margin: 2rem auto;
+}
+.space-top {
+    margin-top: 2rem;
+}
+.space-bottom {
+    margin-bottom: 3rem;
+}
+.divider {
+    border: none;
+    border-bottom: 1px solid #555f6140;
+    margin: 2.5rem auto;
+    width: 80%;
+}
+.section-heading {
+    font-weight: 700;
+}
+.preview-cards {
+    margin: 2rem 0;
+}
+.preview-img {
+    height: 8.75rem;
+    object-fit: cover;
+}
+.caption {
+    font-size: 1.5rem;
+    height: 7rem;
+}
+.card {
+    /* border: none; */
+    border-radius: 40px;
+    padding: 0;
+}
+
+/**********************************************
+ PARK DETAIL VIEW
+**********************************************/
+.show-page {
+    margin: 2rem auto;
+}
+.detail-card {
+    border-radius: 4px;
+}
+.card img {
+    width: 100%;
+}
+.card-body {
+    padding: 2rem;
+}
+.card .caption {
+    padding: 0.5rem;
+}
+.list-group-item.active {
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    color: black;
+}
+.list-group-item.active:hover {
+    font-weight: 700;
+}
+
+/**********************************************
+ EDIT / ADD
+**********************************************/
+.form-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem auto;
+}
+#input {
+    border-radius: 40px;
+    height: 3rem;
+    padding-left: 2rem;
+}
+
+/**********************************************
+FOOTER
+**********************************************/
+footer {
+    font-size: 1rem;
+    padding: 0.75rem;
+    color: burlywood;
+}
