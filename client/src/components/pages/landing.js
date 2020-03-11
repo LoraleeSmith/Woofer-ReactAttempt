@@ -6,10 +6,10 @@
     <a href="/parks" class="continue-btn"><i class="fas fa-arrow-circle-right"></i></a>
 </div>
 
-    <ul class="slideshow">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+  //  <ul class="slideshow">
+     //   <li></li>
+     //   <li></li>
+      //  <li></li>
+     //   <li></li>
+     //   <li></li>
+   // </ul>
