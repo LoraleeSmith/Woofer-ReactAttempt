@@ -5,13 +5,13 @@
   "main": "seeds.js",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.22.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.3",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "react": "^16.13.0",
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {},
   "scripts": {
